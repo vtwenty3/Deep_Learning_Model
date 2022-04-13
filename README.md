@@ -36,4 +36,5 @@ I am suppling 4 models with 4 different outcomes. The graphs showcase the streng
 
 ### Model 1 
 Architecture:
+
 ![1](/img/1.png)
