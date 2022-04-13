@@ -32,3 +32,8 @@ I started with simple architecture and I slowly introduced more layers, this imp
 -	Dense Layer
 
 I am suppling 4 models with 4 different outcomes. The graphs showcase the strengths and weaknesses of different approaches. The architecture is similar on all of the models, but the difference is in hyperparameters (embedding dim, dropout rate, BRNN layer node count):
+
+
+### Model 1 
+Architecture:
+![1](/img/1.png)
