@@ -86,9 +86,8 @@ For evaluation I have used real time monitoring of the learning progress of accu
 
 This is achieved with the architecture of Model , the figure shows model7, but during the time of training and testing the architecture was identical to Model 1.
 
-# Notes
+# Approach and Findings
 
-## Note
 Higher embedding dim seems to work better. I have done one more test, which involved increasing the epos for model3. This is the results:
 
 ![13](/img/13.png)
@@ -99,5 +98,4 @@ Bag Of Words was the first approach tried, but it is obvious that this method is
 
 There is simple pre-process which removes punctuation and removes uppercase, despite the tokenization part, which includes the removal of the uppercase. Its applied to all data (test, train, evaluation).
 
-The model developed and used it far from perfect and still, i have some questions which I could not find answer one regarding some of the functionality and pa-rameters in it. Obviously, this is something that requires a lot of dedication and time and i cannot possibly expect that everything would be absolutely clear in the short span of this module. Overall, I'm satisfied with the result.
 
