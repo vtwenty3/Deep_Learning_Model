@@ -34,7 +34,54 @@ I started with simple architecture and I slowly introduced more layers, this imp
 I am suppling 4 models with 4 different outcomes. The graphs showcase the strengths and weaknesses of different approaches. The architecture is similar on all of the models, but the difference is in hyperparameters (embedding dim, dropout rate, BRNN layer node count):
 
 
-### Model 1 
+### Model 1 (Embedding Dim: 64, Nodes: 12, Droput: 0.6):
 Architecture:
-
 ![1](/img/1.png)
+Evaluation:
+![2](/img/2.png)
+Results:
+![3](/img/3.png)
+
+### Model 2 (Embedding Dim: 64 Embedding Dropout: 0.2 , Nodes: 24, Droput: 0.6)
+Architecture:
+![4](/img/4.png)
+Evaluation:
+![5](/img/5.png)
+Results:
+![6](/img/6.png)
+
+### Model 3 (Embedding Dim: 32, Nodes: 12, Droput: 0.6)
+Architecture:
+![7](/img/7.png)
+Evaluation:
+![8](/img/8.png)
+Results:
+![9](/img/9.png)
+
+### Model 4 (Embedding dim:32, Nodes: 16, Dropout: 0.6)
+Architecture:
+![10](/img/10.png)
+Evaluation:
+![11](/img/11.png)
+Results:
+![12](/img/12.png)
+
+
+# Evaluation
+For evaluation I have used real time monitoring of the learning progress of accu-racy and loss of the training and testing data. As addition after the training the result is evaluated with the evaluation data. So far the best result on evaluation data after 12 epochs is:
+
+![14](/img/14.png)
+
+This is achieved with the architecture of Model , the figure shows model7, but during the time of training and testing the architecture was identical to Model 1.
+
+# Notes
+
+## Note
+Higher embedding dim seems to work better. I have done one more test, which involved increasing the epos for model3. This is the results:
+![13](/img/13.png)
+
+Number of epochs are highly influencial on the final result. Accuracy improves overtime, but the loss is getting higher with more epochs. That indicates that model gets overfitted. I have tried to counter that with different architectures and dropout rates, but the results are similar. 
+
+Bag Of Words was the first approach tried, but it is obvious that this method is not appropriate for deep learning and is functional only in specific scenarios. Next word2vec library was used in attempt to train own vectors on the given train.csv file. Unfortunately, the results were pretty poor, as the data was not big enough for adequate training. Fasttext library developed by Facebook was an interesting find, but after two days trying to install it on google colab, Jupiter, and locally i gave up, as it was giving an error every time, no matter the platform or method used. The final decision was word embeddings with Keras, the implemen-tation is relatively straightforward and library is reliable and easy to import. Moreover, there is a strong community behind it, so more information can be found regarding tuning and eventual problems. Lots of combinations of different architectures and hyperparameters tried, but as far as my experience show, the simpler the architecture the better the results.
+
+
