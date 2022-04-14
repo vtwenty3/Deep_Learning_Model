@@ -38,9 +38,11 @@ I am suppling 4 models with 4 different outcomes. The graphs showcase the streng
 Architecture:
 
 ![1](/img/1.png)
+
 Evaluation:
 
 ![2](/img/2.png)
+
 Results:
 
 ![3](/img/3.png)
@@ -49,9 +51,11 @@ Results:
 Architecture:
 
 ![4](/img/4.png)
+
 Evaluation:
 
 ![5](/img/5.png)
+
 Results:
 
 ![6](/img/6.png)
@@ -60,9 +64,11 @@ Results:
 Architecture:
 
 ![7](/img/7.png)
+
 Evaluation:
 
 ![8](/img/8.png)
+
 Results:
 
 ![9](/img/9.png)
@@ -71,9 +77,11 @@ Results:
 Architecture:
 
 ![10](/img/10.png)
+
 Evaluation:
 
 ![11](/img/11.png)
+
 Results:
 
 ![12](/img/12.png)
